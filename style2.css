@@ -1,0 +1,84 @@
+@viweport{
+    zoom: 1;
+    width:extend-to-zoom; 
+}
+@-ms-viewport{
+    zoom: 1;
+    width:extend-to-zoom; 
+}
+body{
+    background-image: url(logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-bottom: none;
+}
+h1{
+    left: 50%;
+    color: white;
+    text-align: center;
+}
+table{
+    width: 500px;
+    color: white;
+}
+th{
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+ }
+table, th, td{
+    border: 5px dotted darkred;
+}
+.div1{
+width: 20%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bar{
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+}
+
+.bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.bar ul li{
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+}
+.bar  ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}
+.bar ul li a:hover{
+    background-color: white;
+    border-radius: 3px;
+}
+@media all and (max-width: 900px){
+    .bar ul{
+        display: inline-block;
+        list-style: none;
+    }
+    .bar{
+        text-align: center;
+        background-color: rgba(0,0,0,0.8);
+        width: 140%;
+    }
+}
+@media all and (max-width: 400px){
+    .bar{
+        text-align: center;
+        width: 350%;
+    }
+}

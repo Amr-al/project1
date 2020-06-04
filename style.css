@@ -1,0 +1,121 @@
+
+@viweport{
+    zoom: 1;
+    width:extend-to-zoom; 
+}
+body{
+    background-image: url(roll.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bac
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bar{
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    width: 97.05%;
+    padding: 20px;
+
+}
+.bar h1{
+    color: red;
+}
+.login{
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    top: 17%;
+    margin-left:40%;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.login h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid darkred;
+    margin-bottom: 20px;
+    padding: 13px 0px;
+}
+.fname, select {
+    overflow: hidden;
+    font-size: 15px;
+    padding: 5px 0px;
+    margin: 5px 0px;
+    border: 2px solid darkred;
+    display: block;
+    width: 250px;
+    border-radius: 10px;
+    float: left;
+    background:rgba(0,0,0,0.2);
+    color: white;
+}
+
+.fname:hover{
+    width: 300PX;
+    border-radius: 10px;
+}
+.login input[type="submit"]{
+    width: 350px;
+}
+.login input[type="submit"]:hover{
+    background-color: maroon;
+}
+select{
+    background-color: black;
+}/*
+@media all and (max-width: 688px){
+
+    .bar{
+        width: 150%;
+    }
+}
+@media all and (max-width: 520px){
+
+    .bar{
+        width: 170%;
+    }
+}
+@media all and (max-width: 410px){
+
+    .bar{
+        width: 200%;
+    }
+}
+@media all and (max-width: 350px){
+
+    .bar{
+        width: 300%;
+    }
+}
+@media all and (max-width: 350px){
+
+    .bar{
+        width: 300%;
+    }
+}
+@media all and (max-width: 300px){
+    .bar ul{
+        display: inline-block;
+        list-style: none;
+    }
+    .bar{
+        text-align: center;
+    }
+}
+@media all and (max-width: 640px){
+ .login{
+    margin-left:75%;
+ }
+   
+}*/
+@media all and (max-width: 300px){
+
+    .bar{
+        text-align: 100%
+    }
+}

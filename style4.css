@@ -1,0 +1,99 @@
+@viweport{
+    zoom: 1;
+    width:extend-to-zoom; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bar{
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+}
+.bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.bar ul li{
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+}
+.bar  ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}
+.bar ul li a:hover{
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+.service{
+    background-color: darkred;
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+.cont{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 295px;
+}
+body{
+    background-color: rgba(0,0,0,1);
+}
+p{
+    color: white;
+    font-size: 19px;
+}
+a{
+    font-size: 20px;
+    color: yellow;
+}
+.cont img{
+    margin-right: 25px;
+    border: 2px solid wheat;
+    display: inline;
+    margin-left:20px;
+    width: 29%;
+    height: 48%;
+}
+@media all and (max-width:1200px){
+    .cont img{
+        margin-right: 25px;
+        border: 2px solid wheat;
+        display: block;
+        margin-left:20px;
+        width: 40%;
+        height: 70%;
+    }
+}
+@media all and (max-width: 800px){
+    .bar ul{
+        display: inline-block;
+        list-style: none;
+    }
+    .bar{
+        text-align: center;
+    }
+    .service, .cont{
+        width: 160%;
+    }
+    .cont img{
+        width: 65%;
+    }
+
+}
+@media all and (max-width: 400px){
+    .bar{
+        text-align: center;
+        width: 350%;
+    }
+    .service, .cont{
+        width: 350%;
+    }
+
+}
+

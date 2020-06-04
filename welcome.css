@@ -1,0 +1,44 @@
+body{
+    background-image: url(https://s3-eu-west-1.amazonaws.com/opensooq-read/wp-content/uploads/2019/10/09214759/mercedes-benz-logo.jpg) ;
+    background-size: cover;
+}
+h1, a{
+    color: #dddddd;
+    font-size: 65px;
+    text-align: center;
+}
+a{
+    margin-left: 37%;
+    color: #cceabb;
+}
+.bar{
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%
+}
+
+.bar ul{
+    display: inline-flex;
+    list-style: none;
+
+}
+.bar ul li{
+    margin: 10px;
+    padding: 2%;
+    width: 120px;
+   
+}
+.bar  ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 25px;
+}
+.bar ul li a:hover{
+    background-color: white;
+    border-radius: 3px;
+}
+h2{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}

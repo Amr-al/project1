@@ -1,0 +1,121 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Home Page </title>
+  <link href="style.css" rel="stylesheet" media="all">
+
+  <script type="text/javascript"> 
+    function validation() { 
+        var out = "TRUE"; 
+        var password= 
+            document.getElementById("pass").value; 
+            var firstName = 
+            document.getElementById("user").value , lastName = document.getElementById("usr").value , adress = document.getElementById("ml").value
+            number =  document.getElementById("nm").value , email =  document.getElementById("mil").value; 
+        
+            if (firstName.length > 1  ) 
+            out = "TRUE"; 
+        else 
+           out = "FALSE"; 
+        if(out == "FALSE") { 
+            alert("The First name must be correct");
+             return false;
+             }
+        if (lastName.length > 1  ) 
+            out = "TRUE"; 
+        else 
+            out = "FALSE"; 
+        if(out == "FALSE") {
+             alert("The Last name must be correct"); 
+             return false;
+            }
+        if (password.match(/[0-9]/g) && password.length === 8  &&  password[0].match(/[A-Z]/g) && password.match(/[^a-zA-Z\d]/g) && password.indexOf(' ') < 0) 
+            out = "TRUE";
+        else 
+            out = "FALSE"; 
+        if(out == "FALSE"){
+             alert("The passward must start with capital character and contain at least one digit and special character and its length must be 8 with no white space"); 
+             return false;
+             }
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+        out = "TRUE";
+        else
+        out = "FALSE";
+        if(out == "FALSE") {
+            alert("Please,Entered a valid email address!"); 
+            return false;
+            }
+        if(adress.length > 1)  out = "TRUE";
+        else  out = "FALSE";
+        if(out == "FALSE"){ 
+             alert("Enter valid Address!");
+              return false;
+              }
+        if( number.length === 11 && number[0].match("0")) 
+         out = "TRUE";
+        else
+         out = "FALSE";
+        if(out == "FALSE")  { 
+            alert("The number must consist of 11 digits start with 0");
+             return false;
+             }
+        
+
+}
+</script> 
+
+</head>
+<body>
+    <div class="bar">
+        <marquee scrollamount="12"direction="right" behavior="altrante" > <h1><i>Welcome to Mercedes-Benz</i></h1></marquee>
+    </div>
+    <br>
+    <form class="login" onsubmit="return validation()" action="sucess.html">
+        <h1><i> Registration </i></h1>
+    <table>
+        <tr>
+            <td> First-Name </td>
+            <td><input type="text" placeholder="first-name" class="fname" id="user"></td>
+        </tr>
+      <tr>
+          <td>Last-Name</td>
+          <td> <input type="text" placeholder="last-name" class="fname" id="usr"></td>
+      </tr>
+      <tr>
+            <td> Password </td>
+            <td><input type="password" placeholder="Password" class="fname" id="pass"></td>
+        </tr>
+        <tr>
+            <td> E-Mail </td>
+            <td><input type="email" placeholder="Your E-mail" class="fname" id="mil"></td>
+        </tr>
+        <tr>
+            <td> Adress </td>
+            <td><input type="text" placeholder="Your Adress" class="fname" id="ml"></td>
+        </tr>
+        <tr>
+            <td> Number </td>
+            <td><input type="text" placeholder="Your Number" class="fname" id="nm"></td>
+        </tr>
+        <tr>
+            <td> Gender </td>
+            <td> <select aria-placeholder="Your Gender">
+                <option>male</option>
+                <option>female</option>
+            </select></td>
+        </tr>
+        <tr >
+            <td colspan="2"><input type="submit" class="fname"></td>
+        </tr>
+        
+    </table>
+
+    </form>
+
+</body>
+</html>
